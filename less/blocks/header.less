@@ -1,10 +1,18 @@
 .header {
   width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10;
+}
+
+.header__bg {
   background-color: @black;
 }
 
 .header__top {
   width: @max;
+  margin: 0 auto;
   padding: 0 30px;
   display: flex;
   justify-content: space-between;
@@ -23,4 +31,11 @@
   color: #fff;
   font-size: 48px;
   flex-wrap: 600;
+  position: relative;
+  
+  &:first-child::before {
+    content: "";
+    position: absolute;
+    
+  }
 }
