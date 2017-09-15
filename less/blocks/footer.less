@@ -1,0 +1,42 @@
+.footer {
+  width: 100%;
+  padding-top: 60px;
+  padding-bottom: 20px;
+  background-color: @black;
+  background-image: linear-gradient(to bottom, #bc985e, #bc985e 42px, @black 42px, @black);
+}
+
+.footer__wrap {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.footer__link {
+  font-size: 40px;
+  font-weight: 700;
+  color: #fff;
+  padding-left: 40px;
+  position: relative;
+  
+  &::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    background-repeat: no-repeat;
+  }
+  
+  &:first-of-type::before {
+    width: 21px;
+    height: 35px;
+    background-image: url(../img/icon-mobile.png);
+  }
+  
+  &:nth-of-type(2)::before {
+    width: 38px;
+    height: 38px;
+    background-image: url(../img/icon-phone.png);
+  }
+}

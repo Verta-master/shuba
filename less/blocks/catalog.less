@@ -16,6 +16,7 @@
       display: block;
       z-index: 5;
     }
+    .catalog__text--price,
     .catalog__text--static {
       display: none;
     }
@@ -44,6 +45,13 @@
   transition: 0.5s ease-in-out;
 }
 
+.catalog__zoom {
+  position: relative;
+  top: 90px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
 .catalog__text {
   min-height: 74px;
   color: #fff;
@@ -64,6 +72,7 @@
 //    animation-name: slideInUp;
   }
   
+  &--price,
   &--static {
     width: 100%;
     position: absolute;
@@ -71,6 +80,11 @@
     left: 0;
     background-color: rgba(36,36,36,0.6);
     text-align: left;
+  }
+  
+  &--price {
+    display: flex;
+    justify-content: space-between;
   }
 }
 
@@ -80,4 +94,16 @@
   img {
     display: block;
   }
+}
+
+.catalog__like {
+  position: absolute;
+  top: 15px;
+  right: 20px;
+  width: 26px;
+  height: 22px;
+  background-color: transparent;
+  border: none;
+  background-image: url(../img/icon-like.png);
+  background-repeat: no-repeat;
 }
