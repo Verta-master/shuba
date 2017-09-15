@@ -136,11 +136,58 @@
     <img src="img/image-history.jpg" alt="История магазина" class="history__img" width="699" height="510">
   </section>
   
-  <section class="catalog wrapper">
+  <section class="catalog catalog__wrap">
     <h2 class="title-h2">Популярные</h2>
-<!--
     <div class="swiper-container">
-      <ul class="catalog__list swiper-wrapper">
+      <ul class="swiper-wrapper">
+        <li class="catalog__item swiper-slide">
+          <a href="#" class="catalog__link">
+            <div class="catalog__overlay">
+              <img src="img/icon-zoom.png" alt="Перейти в каталог" class="catalog__zoom" width="34" height="35">
+              <p class="catalog__text catalog__text--hover">Перейти в каталог</p>
+            </div>
+            <div class="catalog__img">
+              <img src="img/image-6.jpg" alt="Каталог" width="385" height="391">
+            </div>
+            <p class="catalog__text catalog__text--price">
+              <span>012567430</span>
+              <span>28 000 &#8381;</span>
+            </p>
+            <button type="button" class="catalog__like"><span class="visually-hidden">Нравится</span></button>
+          </a>
+        </li>
+        <li class="catalog__item swiper-slide">
+          <a href="#" class="catalog__link">
+            <div class="catalog__overlay">
+              <img src="img/icon-zoom.png" alt="Перейти в каталог" class="catalog__zoom" width="34" height="35">
+              <p class="catalog__text catalog__text--hover">Перейти в каталог</p>
+            </div>
+            <div class="catalog__img">
+              <img src="img/catalog-1.jpg" alt="Каталог" width="385" height="391">
+            </div>
+            <p class="catalog__text catalog__text--price">
+              <span>012567430</span>
+              <span>28 000 &#8381;</span>
+            </p>
+            <button type="button" class="catalog__like"><span class="visually-hidden">Нравится</span></button>
+          </a>
+        </li>
+        <li class="catalog__item swiper-slide">
+          <a href="#" class="catalog__link">
+            <div class="catalog__overlay">
+              <img src="img/icon-zoom.png" alt="Перейти в каталог" class="catalog__zoom" width="34" height="35">
+              <p class="catalog__text catalog__text--hover">Перейти в каталог</p>
+            </div>
+            <div class="catalog__img">
+              <img src="img/catalog-2.jpg" alt="Каталог" width="385" height="391">
+            </div>
+            <p class="catalog__text catalog__text--price">
+              <span>012567430</span>
+              <span>28 000 &#8381;</span>
+            </p>
+            <button type="button" class="catalog__like"><span class="visually-hidden">Нравится</span></button>
+          </a>
+        </li>
         <li class="catalog__item swiper-slide">
           <a href="#" class="catalog__link">
             <div class="catalog__overlay">
@@ -193,7 +240,6 @@
       <div class="swiper-button-next"></div>
       <div class="swiper-button-prev"></div>
     </div>
--->
   </section>
 
   <section class="review">
@@ -276,11 +322,11 @@
   <script src="js/swiper.jquery.min.js"></script>
   <script>
     var swiper = new Swiper('.swiper-container', {
-        pagination: '.swiper-pagination',
-        paginationClickable: true,
         nextButton: '.swiper-button-next',
         prevButton: '.swiper-button-prev',
-        spaceBetween: 30
+        spaceBetween: 42,
+        slidesPerView: 'auto',
+        paginationClickable: true,
     });
     </script>
 </body>
