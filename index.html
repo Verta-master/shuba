@@ -136,15 +136,83 @@
     <img src="img/image-history.jpg" alt="История магазина" class="history__img" width="699" height="510">
   </section>
   
-  <section class="popular">
+  <section class="catalog wrapper">
     <h2 class="title-h2">Популярные</h2>
-    
+<!--
+    <div class="swiper-container">
+      <ul class="catalog__list swiper-wrapper">
+        <li class="catalog__item swiper-slide">
+          <a href="#" class="catalog__link">
+            <div class="catalog__overlay">
+              <img src="img/icon-zoom.png" alt="Перейти в каталог" class="catalog__zoom" width="34" height="35">
+              <p class="catalog__text catalog__text--hover">Перейти в каталог</p>
+            </div>
+            <div class="catalog__img">
+              <img src="img/image-6.jpg" alt="Каталог" width="385" height="391">
+            </div>
+            <p class="catalog__text catalog__text--price">
+              <span>012567430</span>
+              <span>28 000 &#8381;</span>
+            </p>
+            <button type="button" class="catalog__like"><span class="visually-hidden">Нравится</span></button>
+          </a>
+        </li>
+        <li class="catalog__item swiper-slide">
+          <a href="#" class="catalog__link">
+            <div class="catalog__overlay">
+              <img src="img/icon-zoom.png" alt="Перейти в каталог" class="catalog__zoom" width="34" height="35">
+              <p class="catalog__text catalog__text--hover">Перейти в каталог</p>
+            </div>
+            <div class="catalog__img">
+              <img src="img/catalog-1.jpg" alt="Каталог" width="385" height="391">
+            </div>
+            <p class="catalog__text catalog__text--price">
+              <span>012567430</span>
+              <span>28 000 &#8381;</span>
+            </p>
+            <button type="button" class="catalog__like"><span class="visually-hidden">Нравится</span></button>
+          </a>
+        </li>
+        <li class="catalog__item swiper-slide">
+          <a href="#" class="catalog__link">
+            <div class="catalog__overlay">
+              <img src="img/icon-zoom.png" alt="Перейти в каталог" class="catalog__zoom" width="34" height="35">
+              <p class="catalog__text catalog__text--hover">Перейти в каталог</p>
+            </div>
+            <div class="catalog__img">
+              <img src="img/catalog-2.jpg" alt="Каталог" width="385" height="391">
+            </div>
+            <p class="catalog__text catalog__text--price">
+              <span>012567430</span>
+              <span>28 000 &#8381;</span>
+            </p>
+            <button type="button" class="catalog__like"><span class="visually-hidden">Нравится</span></button>
+          </a>
+        </li>
+      </ul>
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
+    </div>
+-->
   </section>
 
   <section class="review">
     <div class="review__wrap">
       <h2 class="title-h2">Отзывы</h2>
-      
+      <ul class="bxslider">
+        <li class="review__slide">
+          <p class="review__text">Очень хорошее отношение к покупателям.<br>Мне подобрали красивую шубу за небольшую цену.<br>Муж очарован. Рекомендую!</p>
+          <p class="review__author">Иванова Мария</p>
+        </li>
+        <li class="review__slide">
+          <p class="review__text">Очень хорошее отношение к покупателям.<br>Мне подобрали красивую шубу за небольшую цену.<br>Муж очарован. Рекомендую!</p>
+          <p class="review__author">Иванова Мария</p>
+        </li>
+        <li class="review__slide">
+          <p class="review__text">Очень хорошее отношение к покупателям.<br>Мне подобрали красивую шубу за небольшую цену.<br>Муж очарован. Рекомендую!</p>
+          <p class="review__author">Иванова Мария</p>
+        </li>
+      </ul>
     </div>
   </section>
   
@@ -153,25 +221,24 @@
     <ul class="blog__list">
       <li class="blog__item">
         <p class="blog__date">08 авг</p>
-        <article class="blog__article">
+        <a href="#" class="blog__article">
           <img src="img/blog-1.jpg" alt="ТЕНДЕНЦИИ МЕХОВОЙ МОДЫ 2017" class="blog__img" width="505" height="336">
           <h3 class="blog__name">ТЕНДЕНЦИИ МЕХОВОЙ МОДЫ 2017</h3>
-          <p class="blog__text">Казалось, еще совсем недавно только начиналось долгожданное лето, с его короткими ночами и сезоном отпусков, а за окном уже осень. Самое время позаботиться о том, чтобы грядущей зимой чувствовать себя не только комфортно, но и стильно в новой шубке. Мы подготовили краткий обзор самых актуальных моделей шуб... сезона 2017 года.как правильно ухаживать за шубой, чтобы она прослужила вам верой и правдой долгие годы.</p>
-        </article>
+          <p class="blog__text">Казалось, еще совсем недавно только начиналось долгожданное лето, с его короткими ночами и сезоном отпусков, а за окном уже осень. Самое время позаботиться о том, чтобы грядущей зимой чувствовать себя не только комфортно, но и стильно в новой шубке. Мы подготовили краткий обзор самых актуальных моделей шуб...</p>
+        </a>
       </li>
       <li class="blog__item">
         <p class="blog__date">08 авг</p>
-        <article class="blog__article">
+        <a href="#" class="blog__article">
           <img src="img/blog-2.jpg" alt="КАК ПРАВИЛЬНО УХАЖИВАТЬ ЗА ШУБОЙ?" class="blog__img" width="505" height="336">
           <h3 class="blog__name">КАК ПРАВИЛЬНО УХАЖИВАТЬ ЗА ШУБОЙ?</h3>
           <p class="blog__text">Так уж повелось, что в жизни практически каждого человека есть несколько вещей, обладать которыми они мечтают. И если для мужчины традиционно – это автомобиль, то для прекрасной половины человечества – вожделенная шубка. И та, и другая вещь требует качественного ухода. Мы постараемся поэтапно...</p>
-        </article>
+        </a>
       </li>
     </ul>
   </section>
   
   <section class="map">
-    
     <address class="map__adress">
       <h2 class="map__title">Наши контакты</h2>
       <ul class="map__list">
@@ -191,9 +258,30 @@
   </section>
   
   <footer class="footer">
-    <a href="Tel:+74993947320" class="footer__link">+7 499 394 73 20</a>
-    <img src="img/logo-white.png" alt="Logo" class="footer__logo" width="186" height="88">
-    <a href="Tel:+79032702709" class="footer__link">+7 903 270 27 09</a>
+    <div class="footer__wrap wrapper">
+      <a href="Tel:+74993947320" class="footer__link">+7 499 394 73 20</a>
+      <img src="img/logo-white.png" alt="Logo" class="footer__logo" width="186" height="88">
+      <a href="Tel:+79032702709" class="footer__link">+7 903 270 27 09</a>
+    </div>
   </footer>
+  
+  <script src="js/jquery-3.2.1.min.js"></script>
+  <script src="js/jquery.bxslider.min.js"></script>
+  <script>
+    $(document).ready(function(){
+      $(".bxslider").bxSlider();
+    });
+  </script>
+  
+  <script src="js/swiper.jquery.min.js"></script>
+  <script>
+    var swiper = new Swiper('.swiper-container', {
+        pagination: '.swiper-pagination',
+        paginationClickable: true,
+        nextButton: '.swiper-button-next',
+        prevButton: '.swiper-button-prev',
+        spaceBetween: 30
+    });
+    </script>
 </body>
 </html>
