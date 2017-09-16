@@ -38,7 +38,7 @@
       background-image: url(../img/icon-menu-cross.svg);
     }
     .menu__list {
-      width: @max-tablet;
+      width: 100%;
       display: flex;
       flex-direction: column;
     }
@@ -79,8 +79,12 @@
     padding-left: 20px;
     padding-right: 20px;
   }
+  .history__text {
+    max-width: @max-tablet;
+  }
   .history__block {
     margin-bottom: 40px;
+    padding-right: 0;
   }
   .history__img {
     display: block;
@@ -101,6 +105,10 @@
   }
   .blog__item {
     padding-right: 20px;
+  }
+  .blog__img {
+    width: 284px;
+    height: auto;
   }
   .map {
     height: 400px;
@@ -144,7 +152,6 @@
 @media @mobile {
   .wrapper,
   .header__top,
-  .menu__list,
   .catalog__wrap {
     width: @max-mobile !important;
   }
@@ -203,11 +210,19 @@
   .catalog__text {
     font-size: 18px;
   }
+  .history__block {
+    max-width: 280px;
+  }
   .history__title {
     font-size: 24px;
   }
   .history__text {
     font-size: 16px;
+    max-width: @max-mobile;
+  }
+  .history__img {
+    width: 280px;
+    height: auto;
   }
   .title-h2 {
     font-size: 24px;
@@ -224,6 +239,9 @@
   }
   .review__author {
     font-size: 14px;
+  }
+  .blog__article {
+    width: 100%;
   }
   .blog__list {
     flex-direction: column;
