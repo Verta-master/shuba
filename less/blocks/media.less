@@ -1,0 +1,121 @@
+@media @tablet {
+  .wrapper {
+    width: @max-tablet;
+  }
+  .header__top {
+    width: @max-tablet;
+    margin: 0;
+  }
+  .header__block {
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+  }
+  .header__link {
+    font-size: 30px;
+    line-height: 1.2;
+    
+    &::before {
+      transform: scale(0.75) translateY(-60%);
+    }
+  }
+  .menu__btn {
+    display: block;
+  }
+  .menu--closed {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    
+    .menu__list {
+      display: none;
+    }
+  }
+  .menu--opened {
+    padding-top: 10px;
+    
+    .menu__btn {
+      margin-bottom: 10px;
+      background-image: url(../img/icon-menu-cross.svg);
+    }
+    .menu__list {
+      width: @max-tablet;
+      display: flex;
+      flex-direction: column;
+    }
+    .menu__item {
+      width: 100%;
+    }
+    .menu__link {
+      display: block;
+      width: 100%;
+      text-align: center;
+    }
+  }
+  .promo__block {
+    margin-right: auto;
+  }
+  .features__item {
+    font-size: 18px;
+    
+    b {
+      font-size: 24px;
+    }
+  }
+  .catalog__list {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .catalog__img img {
+    width: 350px;
+    height: auto;
+  }
+  .history {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .history__block {
+    margin-bottom: 40px;
+  }
+  .history__img {
+    display: block;
+    margin-left: 0;
+    margin-right: auto;
+  }
+  .catalog__wrap {
+    width: @max-tablet;
+  }
+  .swiper-slide {
+    width: 310px;
+    height: 316px;
+  }
+  .blog__item {
+    padding-right: 20px;
+  }
+  .map {
+    height: 400px;
+  }
+  .map__adress {
+    width: 316px;
+    height: 400px;
+  }
+  .map__title {
+    font-size: 24px;
+  }
+  .map__link,
+  .map__text {
+    font-size: 18px;
+  }
+  .map__item:last-child {
+    padding-top: 90px;
+  }
+  .footer__wrap {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .footer__link {
+    font-size: 24px;
+  }
+}
