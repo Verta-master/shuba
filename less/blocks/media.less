@@ -4,7 +4,7 @@
   }
   .header__top {
     width: @max-tablet;
-    margin: 0;
+    margin: 0 auto;
   }
   .header__block {
     flex-direction: column;
@@ -117,5 +117,141 @@
   }
   .footer__link {
     font-size: 24px;
+  }
+}
+
+//---------------mobile
+@media @mobile {
+  .wrapper,
+  .header__top,
+  .menu__list,
+  .catalog__wrap {
+    width: @max-mobile !important;
+  }
+  .header__link {
+    font-size: 14px;
+    margin-left: 10px;
+    padding-left: 20px;
+    
+    &::before {
+      transform: none;
+      top: 0;
+      background-size: 40% 40%;
+    }
+  }
+  .footer__logo,
+  .logo__img {
+    width: 100px;
+    height: auto;
+  }
+  .menu__link {
+    font-size: 18px;
+    line-height: 40px;
+  }
+  .promo__block {
+    width: 100%;
+    padding-top: 150px;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  .promo__title {
+    font-size: 26px;
+    margin-bottom: 25px;
+  }
+  .promo__item {
+    font-size: 18px;
+    
+    span {
+      font-size: 14px;
+    }
+  }
+  .btn {
+    width: 280px;
+    font-size: 18px;
+    line-height: 50px;
+  }
+  .features__list {
+    flex-direction: column;
+  }
+  .features__item {
+    width: 100%;
+    margin-bottom: 30px;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  .catalog__text {
+    font-size: 18px;
+  }
+  .history__title {
+    font-size: 24px;
+  }
+  .history__text {
+    font-size: 16px;
+  }
+  .title-h2 {
+    font-size: 24px;
+  }
+  .swiper-container {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+  .swiper-slide {
+    width: 250px;
+    height: auto;
+  }
+  .review__text {
+    font-size: 16px;
+  }
+  .review__author {
+    font-size: 14px;
+  }
+  .blog__list {
+    flex-direction: column;
+  }
+  .blog__item {
+    width: 100%;
+    padding-left: 10px;
+    padding-right: 10px;
+    flex-direction: column;
+  }
+  .blog__date {
+    padding-top: 0;
+    padding-left: 55px;
+    margin-bottom: 30px;
+    margin-right: 0;
+  }
+  .map {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    
+    iframe {
+      order: 2;
+      width: 100%;
+      height: 300px;
+    }
+  }
+  .map__adress {
+    order: 1;
+    position: static;
+    transform: none;
+    width: 100%;
+  }
+  .footer__wrap {
+    flex-direction: column;
+  }
+  .footer__logo {
+    order: 3;
+  }
+  .footer__link {
+    font-size: 14px;
+    padding-left: 20px;
+    margin-bottom: 20px;
+    
+    &::before {
+      transform: none;
+      top: 2px;
+      background-size: 40% 40%;
+    }
   }
 }
