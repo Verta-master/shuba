@@ -1,0 +1,92 @@
+.form {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  margin-top: 200px;
+  padding-bottom: 35px;
+  background: linear-gradient(to right, rgba(82, 82, 82, 0.5), rgba(82, 82, 82, 0.5) 14px, transparent 14px, transparent 15px, rgba(82, 82, 82, 0.5) 15px, rgba(82, 82, 82, 0.5) 16px, transparent 16px, transparent 17px, rgba(82, 82, 82, 0.5) 17px, rgba(82, 82, 82, 0.5) 18px, transparent 18px, transparent 19px);
+  background-position: 0 100%;
+  background-repeat: repeat-x;
+  background-size: 19px 1px;
+}
+
+.form__choice {
+  display: flex;
+  flex-direction: column;
+}
+
+.form__label {
+  font-size: 24px;
+}
+
+.form__field {
+  width: 397px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.form__select {
+  width: 266px;
+  min-height: 40px;
+  padding: 0 25px;
+  font-size: 24px;
+  font-weight: 300;
+  border: 2px solid #a8a8a8;
+  cursor: pointer;
+  outline: none;
+  margin-bottom: 20px;
+  appearance: none;
+  background-image: url(../img/arrow.png);
+  background-repeat: no-repeat;
+  background-position: 93% 16px;
+}
+
+.form__select::-ms-expand {
+  color: transparent;
+  border: none;
+  background-color: transparent;
+}
+
+.form__input {
+  width: 118px;
+  height: 40px;
+  text-align: center;
+  font-size: 24px;
+  font-weight: 300;
+  border: 2px solid #a8a8a8;
+}
+
+.form__btn {
+  align-self: center;
+  width: 182px;
+  min-height: 49px;
+  margin-left: 75px;
+  color: #fbf6f6;
+  font-size: 24px;
+  background-color: #525252;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  
+  &:hover,
+  &:active {
+    opacity: 0.7;
+  }
+}
+
+.form__wrap {
+  width: 266px;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  
+  &::after {
+    content: "-";
+    position: absolute;
+    top: 0;
+    left: 50%;
+    font-size: 24px;
+    line-height: 40px;
+    transform: translateX(-50%);
+  }
+}

@@ -1,0 +1,39 @@
+.paginator {
+  padding-left: 30px;
+  padding-top: 45px;
+  padding-bottom: 65px;
+}
+
+.paginator__link {
+  font-size: 24px;
+  line-height: 1.2;
+  color: #525252;
+  margin-right: 25px;
+  position: relative;
+  
+  &:hover,
+  &:active {
+    color: @yellow;
+  }
+}
+
+.paginator__link--active {
+  cursor: default;
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    background-color: @yellow;
+    z-index: -1;
+  }
+  
+  &:hover {
+    color: #525252;
+  }
+}
