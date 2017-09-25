@@ -550,6 +550,7 @@
   .product__item:nth-child(3n) {
     margin-right: 0;
   }
+  .product__img,
   .product__figure {
     width: 100%;
     height: auto;
