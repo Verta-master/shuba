@@ -1,5 +1,5 @@
 .breadcrumbs {
-  margin-top: 180px;
+  margin-top: 170px;
   margin-bottom: 35px;
   padding-left: 30px;
 }
@@ -11,6 +11,10 @@
   line-height: 1.2;
   margin-right: 25px;
   position: relative;
+  
+  &:hover {
+    border-bottom: 1px solid @yellow-font;
+  }
   
   &::after {
     content: "/";
@@ -25,6 +29,10 @@
     
     &::after {
       display: none;
+    }
+    
+    &:hover {
+      border-bottom: none;
     }
   }
 }
