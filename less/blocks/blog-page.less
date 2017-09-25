@@ -1,0 +1,86 @@
+.blog__item--active {
+  width: 770px;
+  
+  .blog__img {
+    width: 702px;
+    height: auto;
+  }
+}
+
+.blog__item--recent {
+  width: 365px;
+  flex-direction: column;
+  
+  .blog__date {
+    margin: 0;
+    color: @yellow-font;
+    font-size: 11px;
+    line-height: 12px;
+    padding-top: 38px;
+    min-width: 35px;
+    
+    &::before {
+      background-image: url(../img/icon-calender-yellow.png);
+    }
+  }
+  
+  .blog__name,
+  .blog__text--page {
+    width: 365px;
+  }
+  
+  .blog__img {
+    width: 365px;
+    height: auto;
+  }
+}
+
+.blog__date {
+  text-transform: uppercase;
+  min-width: 55px;
+}
+
+.blog__article {
+  position: relative;
+  margin-bottom: 50px;
+  display: inline-block;
+  vertical-align: top;
+}
+
+.blog__date-wrap {
+  position: absolute;
+  top: 9px;
+  left: 12px;
+  background-color: #fff;
+  padding: 5px 13px;
+}
+
+.blog__name--page {
+  font-size: 36px;
+}
+
+.blog__text--page {
+  font-size: 20px;
+}
+
+.blog__link {
+  display: block;
+  color: @yellow-font;
+  font-size: 18px;
+  font-weight: 600;
+  text-transform: uppercase;
+  text-align: center;
+  width: 159px;
+  line-height: 37px;
+  border: 1px solid rgb(188, 152, 94);
+  
+  &:hover,
+  &:active {
+    background-color: rgb(188, 152, 94);
+    color: #fff;
+  }
+}
+
+.blog__list--page {
+  padding-left: 30px;
+}
