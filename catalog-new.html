@@ -7,68 +7,132 @@
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,600i,700&amp;subset=cyrillic" rel="stylesheet">
   <link rel="stylesheet" href="css/style-1.min.css">
   <link rel="stylesheet" href="css/style-2.min.css">
+  <link rel="stylesheet" href="css/style.min.css">
 </head>
 <body>
-  <header class="header">
-    <div class="header__bg">
-      <div class="header__top">
-        <div class="logo">
-          <img src="img/logo.png" alt="Logo" class="logo__img" width="173" height="82">
-        </div>
-        <div class="header__block">
-          <a href="Tel:+74993947320" class="header__link">+7 499 394 73 20</a>
-          <a href="Tel:+79032702709" class="header__link">+7 903 270 27 09</a>
-        </div>
+  <header class="header-new">
+    <div class="header-new__wrap header-new__wrap--catalog">
+      <div class="logo-new">
+        <img src="img/logo-new.png" alt="Logo" width="201" height="95">
       </div>
+      <nav class="menu menu--new menu--closed">
+        <button class="menu__btn"><span class="visually-hidden">Закрыть/Открыть</span></button>
+        <ul class="menu__list">
+          <li class="menu__item"><a href="#" class="menu__link">О Нас</a></li>
+          <li class="menu__item"><a href="#" class="menu__link">каталог</a></li>
+          <li class="menu__item"><a href="#" class="menu__link">отзывы</a></li>
+          <li class="menu__item"><a href="#" class="menu__link">советы</a></li>
+          <li class="menu__item"><a href="#" class="menu__link">контакты</a></li>
+        </ul>
+      </nav>
     </div>
-    <nav class="menu menu--closed">
-      <button class="menu__btn"><span class="visually-hidden">Закрыть/Открыть</span></button>
-      <ul class="menu__list">
-        <li class="menu__item"><a href="#" class="menu__link">О Нас</a></li>
-        <li class="menu__item"><a href="#" class="menu__link menu__link--active">каталог</a></li>
-        <li class="menu__item"><a href="#" class="menu__link">акции</a></li>
-        <li class="menu__item"><a href="#" class="menu__link">отзывы</a></li>
-        <li class="menu__item"><a href="#" class="menu__link">контакты</a></li>
-      </ul>
-    </nav>
   </header>
   
   <section class="product wrapper">
-    <form action="#" class="form" method="get">
-      <h3 class="product__h3">Поиск по товарам:</h3>
-      <div class="form__choice">
-        <div class="form__field">
-          <label for="fur" class="form__label">Мех</label>
+    <h1 class="visually-hidden">Каталог</h1>
+    <form action="#" class="product__form" method="get">
+      <div class="product__wrap">
+        <div class="form__select-wrap">
+          <select name="type" id="type" class="form__select">
+            <option value="Вид изделия">Вид изделия</option>
+            <option value="Шуба">Шуба</option>
+            <option value="Манто">Манто</option>
+            <option value="Полушубок">Полушубок</option>
+          </select>
+        </div>
+        <div class="form__select-wrap">
           <select name="fur" id="fur" class="form__select">
-            <option value="Каракуль">Каракуль</option>
+            <option value="Материал">Материал</option>
             <option value="Норка">Норка</option>
             <option value="Соболь">Соболь</option>
             <option value="Лиса">Лиса</option>
           </select>
         </div>
-        <div class="form__field">
-          <label for="min" class="form__label">Цена</label>
-          <div class="form__wrap">
-            <input type="text" name="price-min" id="min" class="form__input" value="0">
-            <input type="text" name="price-max" id="max" class="form__input" value="0">
-          </div>
+        <div class="form__select-wrap">
+          <select name="internal" id="internal" class="form__select">
+            <option value="Материал">Вставка</option>
+            <option value="Норка">Норка</option>
+            <option value="Соболь">Соболь</option>
+            <option value="Лиса">Лиса</option>
+          </select>
         </div>
+        <a href="#" class="product__toggle">цена</a>
       </div>
-      <button class="form__btn" type="submit">Показать</button>
     </form>
-    <div class="product__sort">
-      <h3 class="product__h3">Сортировать:</h3>
-      <a href="#" class="product__toggle">цена</a>
-      <div class="product__nav">
-        <a href="#" class="product__page product__page--active">1</a>
-        <a href="#" class="product__page">2</a>
-        <a href="#" class="product__page">3</a>
-        <a href="#" class="product__page product__page--space">...</a>
-        <a href="#" class="product__page">10</a>
-        <a href="#" class="product__page product__page--arrow"></a>
-      </div>
-    </div>
+    
     <ul class="product__list">
+      <li class="product__item">
+        <a href="#">
+          <figure class="product__figure">
+            <img src="img/catalog-img-1.jpg" alt="Название шубы" class="product__img" width="205" height="308">
+          </figure>
+          <p class="product__title">Название шубы</p>
+          <p class="product__price">от 20 000 руб.</p>
+        </a>
+      </li>
+      <li class="product__item">
+        <a href="#">
+          <figure class="product__figure">
+            <img src="img/catalog-img-2.jpg" alt="Название шубы" class="product__img" width="205" height="308">
+          </figure>
+          <p class="product__title">Название шубы</p>
+          <p class="product__price">от 20 000 руб.</p>
+        </a>
+      </li>
+      <li class="product__item">
+        <a href="#">
+          <figure class="product__figure">
+            <img src="img/catalog-img-3.jpg" alt="Название шубы" class="product__img" width="205" height="308">
+          </figure>
+          <p class="product__title">Название шубы</p>
+          <p class="product__price">от 20 000 руб.</p>
+        </a>
+      </li>
+      <li class="product__item">
+        <a href="#">
+          <figure class="product__figure">
+            <img src="img/catalog-img-4.jpg" alt="Название шубы" class="product__img" width="205" height="308">
+          </figure>
+          <p class="product__title">Название шубы</p>
+          <p class="product__price">от 20 000 руб.</p>
+        </a>
+      </li>
+      <li class="product__item">
+        <a href="#">
+          <figure class="product__figure">
+            <img src="img/catalog-img-1.jpg" alt="Название шубы" class="product__img" width="205" height="308">
+          </figure>
+          <p class="product__title">Название шубы</p>
+          <p class="product__price">от 20 000 руб.</p>
+        </a>
+      </li>
+      <li class="product__item">
+        <a href="#">
+          <figure class="product__figure">
+            <img src="img/catalog-img-2.jpg" alt="Название шубы" class="product__img" width="205" height="308">
+          </figure>
+          <p class="product__title">Название шубы</p>
+          <p class="product__price">от 20 000 руб.</p>
+        </a>
+      </li>
+      <li class="product__item">
+        <a href="#">
+          <figure class="product__figure">
+            <img src="img/catalog-img-3.jpg" alt="Название шубы" class="product__img" width="205" height="308">
+          </figure>
+          <p class="product__title">Название шубы</p>
+          <p class="product__price">от 20 000 руб.</p>
+        </a>
+      </li>
+      <li class="product__item">
+        <a href="#">
+          <figure class="product__figure">
+            <img src="img/catalog-img-4.jpg" alt="Название шубы" class="product__img" width="205" height="308">
+          </figure>
+          <p class="product__title">Название шубы</p>
+          <p class="product__price">от 20 000 руб.</p>
+        </a>
+      </li>
       <li class="product__item">
         <a href="#">
           <figure class="product__figure">
@@ -192,11 +256,15 @@
     <a href="#" class="paginator__link paginator__link--next"><span>Следующая страница </span>&raquo;</a>
   </nav>
   
-  <footer class="footer">
-    <div class="footer__wrap wrapper">
-      <a href="Tel:+74993947320" class="footer__link">+7 499 394 73 20</a>
-      <img src="img/logo-white.png" alt="Logo" class="footer__logo" width="186" height="88">
-      <a href="Tel:+79032702709" class="footer__link">+7 903 270 27 09</a>
+  <footer class="footer-new">
+    <div class="footer-new__wrap footer-new__wrap--catalog">
+      <a href="Tel:+79032702709" class="footer-new__link">+7 903 270 27 09</a>
+      <div class="social">
+        <a href="#" class="social__link"><span class="visually-hidden">Facebook</span></a>
+        <a href="#" class="social__link"><span class="visually-hidden">Vkontakte</span></a>
+        <a href="#" class="social__link"><span class="visually-hidden">Telegram</span></a>
+      </div>
+      <a href="Tel:+74993947320" class="footer-new__link">+7 499 394 73 20</a>
     </div>
   </footer>
   

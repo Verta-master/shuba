@@ -1,0 +1,117 @@
+.catalog__wrap-new {
+  width: 1245px;
+  margin: 0 auto;
+  margin-bottom: 35px;
+}
+
+.swiper-slide-1 {
+  width: 354px;
+  height: 360px;
+}
+
+.swiper-container-1 {
+  padding-left: 54px;
+  padding-right: 54px;
+}
+
+.catalog__text--main {
+  font-family: "PFCentroSansPro", "Arial", sans-serif;
+  top: 30%;
+  background-color: #bc985e;
+  text-align: center;
+}
+
+.catalog__item:hover {
+  .catalog__like {
+    display: none;
+  }
+  
+  .catalog__text--main {
+    animation-duration: 1s;
+    animation-name: slideInUp;
+  }
+}
+
+.catalog__text--yellow {
+  background-color: rgba(188,152,94,0.6);
+}
+
+.product__wrap {
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
+  margin-bottom: 53px;
+}
+
+.product__toggle {
+  margin-right: 0;
+}
+
+.form__select-wrap {
+  margin-right: 45px;
+  position: relative;
+  
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 42px;
+    width: 2px;
+    height: 40px;
+    background-color: rgb(168, 168, 168);
+  }
+}
+
+.form__select {
+  background-position: 95% 16px;
+}
+
+.product__item {
+  border: none;
+  padding: 0;
+  margin-bottom: 41px;
+  
+  &:hover .product__img {
+    transform: scale(1.1);
+    transition: 0.5s ease-in-out;
+  }
+}
+
+.product__figure {
+  padding: 30px;
+  width: 271px;
+  height: 367px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid rgba(82, 82, 82, 0.5);
+  
+  img {
+    display: block;
+  }
+}
+
+.product__title {
+  text-align: center;
+  margin-top: 15px;
+}
+
+.product__price {
+  text-align: center;
+  border: none;
+  padding: 0;
+}
+
+.product__list {
+  background-image: none;
+}
+
+.product__form {
+  padding-top: 10px;
+}
+
+.paginator {
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 70px;
+}

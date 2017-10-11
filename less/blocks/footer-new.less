@@ -1,0 +1,40 @@
+.footer-new__wrap {
+  width: 1136px;
+  margin: 0 auto;
+  padding-top: 47px;
+  padding-bottom: 80px;
+  border-top: 1px solid #000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  
+  &--catalog {
+    width: 1170px;
+  }
+}
+
+.footer-new__link {
+  font-size: 36px;
+  font-weight: 600;
+  color: #504f50;
+  padding-left: 35px;
+  position: relative;
+  
+  &::before {
+    content: "";
+    position: absolute;
+    top: 7px;
+    left: 0;
+    width: 29px;
+    height: 29px;
+    background-repeat: no-repeat;
+  }
+  
+  &:first-of-type::before {
+    background-image: url(../img/mobile.png);
+  }
+  
+  &:last-of-type::before {
+    background-image: url(../img/phone.png);
+  }
+}
